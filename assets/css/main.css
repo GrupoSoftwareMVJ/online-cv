@@ -1,7 +1,7 @@
 body {
     font-family: 'Tahoma', sans-serif;
     color: rgb(0, 0, 0);
-    background: rgb(207, 151, 170);
+    background: rgb(224, 182, 198);
     font-size: 14px;
     padding: 30px;
     -webkit-font-smoothing: antialiased;
@@ -348,7 +348,7 @@ p {
 @media (min-width: 992px) {
     .skillset .level-title {
         display: inline-block;
-        float: left;
+        float: none;
         width: 30%;
         margin-bottom: 0
     }
@@ -356,7 +356,7 @@ p {
     .skillset .level-bar {
         display: inline-block;
         width: 70%;
-        float: left;
+        float: none;
         position: relative;
         top: 1px
     }
@@ -379,15 +379,15 @@ p {
     .main-wrapper .time {
         float: right;
         color: black !important;
-        -webkit-print-color-adjust: exact
-    }
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;    }
 
     .sidebar-wrapper {
         position: static;
         float: right;
         width: 40%;
-        -webkit-print-color-adjust: exact
-    }
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;    }
 
     .remove-container.container-block {
         display: none
@@ -399,7 +399,9 @@ p {
 
     .skillset .level-bar-inner {
         background-color: black !important;
-        -webkit-print-color-adjust: exact
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+
     }
 
     .fa-inverse,
